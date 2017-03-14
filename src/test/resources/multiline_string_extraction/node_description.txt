@@ -1,0 +1,35 @@
+Name:			jenkins.example.com
+Labels:			env=test,kubernetes.io/hostname=10.0.0.105,role=node
+CreationTimestamp:	Wed, 24 Feb 2016 16:38:50 +0100
+Phase:			
+Conditions:
+  Type		Status	LastHeartbeatTime			LastTransitionTime			Reason		Message
+  ────		──────	─────────────────			──────────────────			──────		───────
+  Ready 	True 	Tue, 14 Mar 2017 16:10:15 +0100 	Mon, 06 Mar 2017 14:04:41 +0100 	KubeletReady 	kubelet is posting ready status
+Addresses:	100.65.3.39,100.65.3.39
+Capacity:
+ cpu:		4
+ memory:	16266940Ki
+ pods:		40
+System Info:
+ Machine ID:				9faaeb7d813645eea20700392a7db62d
+ System UUID:				9FAAEB7D-8136-45EE-A207-00392A7DB62D
+ Boot ID:				884390f8-84a3-4785-8523-28ccf45cf9d8
+ Kernel Version:			3.10.0-327.10.1.el7.x86_64
+ OS Image:				Unknown
+ Container Runtime Version:		docker://1.8.2
+ Kubelet Version:			v1.1.0-origin-1107-g4c8e6f4
+ Kube-Proxy Version:			v1.1.0-origin-1107-g4c8e6f4
+ExternalID:				100.65.3.39
+Non-terminated Pods:			(21 in total)
+  Namespace				Name					CPU Requests	CPU Limits	Memory Requests	Memory Limits
+  ─────────				────					────────────	──────────	───────────────	─────────────
+  myproject	backendPod-48-53abh			100m (2%)	0 (0%)		800Mi (5%)	800Mi (5%)
+  myproject	someServicePod-47-kjurj			50m (1%)	200m (5%)	600Mi (3%)	700Mi (4%)
+  myproject	ui-46-35595			100m (2%)	0 (0%)		600Mi (3%)	600Mi (3%)
+Allocated resources:
+  (Total limits may be over 100%, i.e., overcommitted. More info: http://releases.k8s.io/HEAD/docs/user-guide/compute-resources.md)
+  CPU Requests	CPU Limits	Memory Requests	Memory Limits
+  ────────────	──────────	───────────────	─────────────
+  2500m (62%)	400m (10%)	13300Mi (83%)	9900Mi (62%)
+No events.
